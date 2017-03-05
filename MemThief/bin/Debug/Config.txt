@@ -1,0 +1,4 @@
+MaxPage=999
+MaxPictures=999
+MemStorage=Mem_Storage/
+LogStorage=Log_Storage/Log.txt

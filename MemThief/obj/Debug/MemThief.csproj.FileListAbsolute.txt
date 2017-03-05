@@ -1,0 +1,7 @@
+c:\users\dzikidzik\documents\visual studio 2015\Projects\MemThief\MemThief\bin\Debug\MemThief.exe.config
+c:\users\dzikidzik\documents\visual studio 2015\Projects\MemThief\MemThief\bin\Debug\MemThief.exe
+c:\users\dzikidzik\documents\visual studio 2015\Projects\MemThief\MemThief\bin\Debug\MemThief.pdb
+c:\users\dzikidzik\documents\visual studio 2015\Projects\MemThief\MemThief\obj\Debug\MemThief.csprojResolveAssemblyReference.cache
+c:\users\dzikidzik\documents\visual studio 2015\Projects\MemThief\MemThief\obj\Debug\MemThief.exe
+c:\users\dzikidzik\documents\visual studio 2015\Projects\MemThief\MemThief\obj\Debug\MemThief.pdb
+c:\users\dzikidzik\documents\visual studio 2015\Projects\MemThief\MemThief\bin\Debug\CalbucciLib.HtmlParser.dll
