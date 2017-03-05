@@ -1,4 +1,4 @@
-# MemThief
+# MemThief C#
  Aplikacja Kradnie Memy z Popularnych Serwisow z Memami i Smiesznymi obrazkami </br>
  </br>
  MemThief jest Kompatybilny z</br>
