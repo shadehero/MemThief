@@ -10,7 +10,8 @@ using System.Threading.Tasks;
 namespace MemThief
 {
     class Download
-    {
+    { 
+
         public WebClient Client;
         public string Filename;
         public string FileSize;
@@ -37,6 +38,20 @@ namespace MemThief
             Url = url;
             Filename = GetFileName(Url);
             FileSize = GetFileSize(new Uri(Url));
+        }
+
+        // Sprawdza Czy Link jest OK
+        public static bool CheckUrl(string url)
+        {
+            try
+            {
+                Uri t = new Uri(url);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         // Pobieranie Strony 
@@ -79,6 +94,7 @@ namespace MemThief
         // Generowanie Nazwy Pliku
         public string GetFileName(string Url)
         {
+
             Uri uri = new Uri(Url);
             return Path.GetFileName(uri.LocalPath);
         }

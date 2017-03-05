@@ -33,17 +33,31 @@ namespace MemThief
             {
                 if (element.TagName == "img")
                 {
-                    string url = element.GetAttributeValue("src");
-                    Download PicInfo = new Download(url);
+                    string url =  element.GetAttributeValue("src");
 
-                    if (!File.Exists(Config.StoragePath + PicInfo.Filename))
+                    Download PicInfo;
+
+                    if (Download.CheckUrl(url))
                     {
-                        PicList.Add(new Picture(url, PicInfo.FileSize, PicInfo.Filename));
+                        PicInfo = new Download(url);
+
+                        if (!File.Exists(Config.StoragePath + PicInfo.Filename))
+                        {
+                            PicList.Add(new Picture(url, PicInfo.FileSize, PicInfo.Filename));
+                        }
+                        else
+                        {
+                            Print.PicInStorage(PicInfo.Filename);
+                        }
                     }
                     else
                     {
-                        Print.PicInStorage(PicInfo.Filename);
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("Ups.. I can't this download Picture");
+                        Console.ResetColor();
+                        Logger.Add("Ups.. I can't this download Picture");
                     }
+                    
                 }
             });
             return PicList;

@@ -1,4 +1,7 @@
-MaxPage=999
-MaxPictures=999
-MemStorage=Mem_Storage/
-LogStorage=Log_Storage/Log.txt
+[MaxPage]=999
+[MaxPictures]=999
+[MemStorage]=Mem_Storage/
+[LogStorag]e=Log_Storage/Log.txt
+[Website]=http://www.paczaizm.pl/
+FORCEMODE=false
+
